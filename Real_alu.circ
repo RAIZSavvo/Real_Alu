@@ -15,7 +15,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="valign" val="base"/>
     </tool>
   </lib>
-  <main name="Real_Alu"/>
+  <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -48,39 +48,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <tool lib="1" name="AND Gate"/>
     <tool lib="1" name="OR Gate"/>
   </toolbar>
-  <circuit name="Real_Alu">
-    <a name="circuit" val="Real_Alu"/>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-  </circuit>
-  <circuit name="And">
-    <a name="circuit" val="And"/>
-    <a name="clabel" val=""/>
-    <a name="clabelup" val="east"/>
-    <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(140,270)" to="(330,270)"/>
-    <wire from="(140,230)" to="(330,230)"/>
-    <wire from="(380,250)" to="(470,250)"/>
-    <comp lib="0" loc="(140,270)" name="Pin">
-      <a name="width" val="4"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="B"/>
-    </comp>
-    <comp lib="0" loc="(140,230)" name="Pin">
-      <a name="width" val="4"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="A"/>
-    </comp>
-    <comp lib="1" loc="(380,250)" name="AND Gate">
-      <a name="width" val="4"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(470,250)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="4"/>
-      <a name="labelloc" val="east"/>
-    </comp>
   </circuit>
 </project>
